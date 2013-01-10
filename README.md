@@ -7,3 +7,4 @@ source for:
 - firmware
 - puredata external
 - circuit (differential opamp with gain, custom voltage divider (pnp))
+- control interface for tablet (http://charlie-roberts.com/Control/)
