@@ -156,6 +156,8 @@ int main(void) {
 			startBootloader();
 		}
 		
+		PORTD ^= (1 << 6);
+		
 		for(i = 0; i < ADC_CHANNELS; i++) {
 			adcValue = adc_read(ADC_PRESCALER_32, ADC_VREF_AVCC, i);
 			usb_reply[i] = adcValue >> 2;	
@@ -165,9 +167,9 @@ int main(void) {
 			usb_reply[replybyte] =	(usb_reply[replybyte] & ~replymask) | (replymask & (adcValue << replyshift));
 			_delay_us(ADCDELAY);
 		}
-		usb_reply[8] = PINC;
-		usb_reply[9] = PINJ;
-		usb_reply[10] = PINA;
+		usb_reply[7] = PINC;
+		usb_reply[8] = PINJ;
+		usb_reply[9] = PINA;
 	}
 	return 0;
 }

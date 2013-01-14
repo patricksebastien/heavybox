@@ -28,8 +28,8 @@
 #define USBDEV_SHARED_VENDOR    	0x16c0  /* VOTI */
 #define USBDEV_SHARED_PRODUCT   	0x05dc  /* Obdev's free shared PID */
 #define DEFAULT_CLOCK_INTERVAL		10      /* ms */
-#define OUTLETS 					17
-#define USBREPLYBUFFER 				21
+#define OUTLETS 					8
+#define USBREPLYBUFFER 				10
 
 unsigned char buffer[USBREPLYBUFFER]; //accessible everywhere
 
@@ -118,104 +118,44 @@ void gac_bang(t_gac *x) {
 		
 		switch(n) {
 			case 0:
-				replybyte = buffer[16];
+				replybyte = buffer[5];
 				replyshift = ((0 % 4) * 2);
 				replymask = (3 << replyshift);
 				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
 			break;
 			case 1:
-				replybyte = buffer[16];
+				replybyte = buffer[5];
 				replyshift = ((1 % 4) * 2);
 				replymask = (3 << replyshift);
 				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
 			break;
 			case 2:
-				replybyte = buffer[16];
+				replybyte = buffer[5];
 				replyshift = ((2 % 4) * 2);
 				replymask = (3 << replyshift);
 				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
 			break;
 			case 3:
-				replybyte = buffer[16];
+				replybyte = buffer[5];
 				replyshift = ((3 % 4) * 2);
 				replymask = (3 << replyshift);
 				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
 			break;
 			case 4:
-				replybyte = buffer[17];
+				replybyte = buffer[6];
 				replyshift = ((0 % 4) * 2);
 				replymask = (3 << replyshift);
 				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
 			break;
 			case 5:
-				replybyte = buffer[17];
-				replyshift = ((1 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
+				temp = buffer[7];
+				break;
 			case 6:
-				replybyte = buffer[17];
-				replyshift = ((2 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
+				temp = buffer[8];
+				break;
 			case 7:
-				replybyte = buffer[17];
-				replyshift = ((3 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 8:
-				replybyte = buffer[18];
-				replyshift = ((0 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 9:
-				replybyte = buffer[18];
-				replyshift = ((1 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 10:
-				replybyte = buffer[18];
-				replyshift = ((2 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 11:
-				replybyte = buffer[18];
-				replyshift = ((3 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 12:
-				replybyte = buffer[19];
-				replyshift = ((0 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 13:
-				replybyte = buffer[19];
-				replyshift = ((1 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 14:
-				replybyte = buffer[19];
-				replyshift = ((2 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 15:
-				replybyte = buffer[19];
-				replyshift = ((3 % 4) * 2);
-				replymask = (3 << replyshift);
-				temp = temp * 4 + ((replybyte & replymask) >> replyshift);
-			break;
-			case 16:
-				temp = buffer[20];
-			break;
+				temp = buffer[9];
+				break;
 		}
 		outlet_float(x->outlets[n], temp);
 		

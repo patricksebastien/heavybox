@@ -1,0 +1,419 @@
+# EESchema Netlist Version 1.1 created  Sat 29 Dec 2012 05:19:22 PM EST
+(
+ ( /50DE84B8 $noname  C1 CP1 {Lib=CP1}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /50DE84D6 $noname  C2 C {Lib=C}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /50DE85D6 $noname  R10 80k {Lib=R}
+  (    1 N-000020 )
+  (    2 N-000022 )
+ )
+ ( /50DE85F4 $noname  U2 TLV2774 {Lib=LM324}
+  (    1 N-000022 )
+  (    2 N-000020 )
+  (    3 N-000018 )
+  (    4 VCC )
+  (    5 N-000016 )
+  (    6 N-000014 )
+  (    7 N-000021 )
+  (   11 GND )
+ )
+ ( /50DE868C $noname  R1 2k {Lib=R}
+  (    1 /ACCELEROMETER1x )
+  (    2 N-000018 )
+ )
+ ( /50DE8706 $noname  R2 2k {Lib=R}
+  (    1 /difV )
+  (    2 N-000020 )
+ )
+ ( /50DE8715 $noname  R7 80k {Lib=R}
+  (    1 GND )
+  (    2 N-000018 )
+ )
+ ( /50DE8781 $noname  R13 80k {Lib=R}
+  (    1 N-000022 )
+  (    2 /PEDAL1 )
+ )
+ ( /50DE8790 $noname  C3 0.1uf {Lib=C}
+  (    1 /PEDAL1 )
+  (    2 GND )
+ )
+ ( /50DE8AC3 $noname  P7 POWER {Lib=CONN_2}
+  (    1 VCC )
+  (    2 GND )
+ )
+ ( /50DE8D37 $noname  R11 80k {Lib=R}
+  (    1 N-000014 )
+  (    2 N-000021 )
+ )
+ ( /50DE8D43 $noname  R3 2k {Lib=R}
+  (    1 /ACCELEROMETER2x )
+  (    2 N-000016 )
+ )
+ ( /50DE8D49 $noname  R4 2k {Lib=R}
+  (    1 /difV )
+  (    2 N-000014 )
+ )
+ ( /50DE8D4F $noname  R8 80k {Lib=R}
+  (    1 GND )
+  (    2 N-000016 )
+ )
+ ( /50DE8D57 $noname  R14 80k {Lib=R}
+  (    1 N-000021 )
+  (    2 /PEDAL2 )
+ )
+ ( /50DE8D5D $noname  C4 0.1uf {Lib=C}
+  (    1 /PEDAL2 )
+  (    2 GND )
+ )
+ ( /50DE8FA3 $noname  Q2 PNP {Lib=PNP}
+  (    1 N-000007 )
+  (    2 N-000006 )
+  (    3 /SLIDER2 )
+ )
+ ( /50DE8FCB $noname  R18 R {Lib=R}
+  (    1 VCC )
+  (    2 N-000006 )
+ )
+ ( /50DE8FDA $noname  R19 R {Lib=R}
+  (    1 N-000006 )
+  (    2 GND )
+ )
+ ( /50DE8FE7 $noname  R23 R {Lib=R}
+  (    1 VCC )
+  (    2 N-000007 )
+ )
+ ( /50DE9195 $noname  P2 S2 {Lib=CONN_2}
+  (    1 /SLIDER2 )
+  (    2 GND )
+ )
+ ( /50DE93A8 $noname  Q1 PNP {Lib=PNP}
+  (    1 N-000004 )
+  (    2 N-000009 )
+  (    3 /SLIDER1 )
+ )
+ ( /50DE93AE $noname  R16 R {Lib=R}
+  (    1 VCC )
+  (    2 N-000009 )
+ )
+ ( /50DE93B4 $noname  R17 R {Lib=R}
+  (    1 N-000009 )
+  (    2 GND )
+ )
+ ( /50DE93BA $noname  R22 R {Lib=R}
+  (    1 VCC )
+  (    2 N-000004 )
+ )
+ ( /50DE93CD $noname  P1 S1 {Lib=CONN_2}
+  (    1 /SLIDER1 )
+  (    2 GND )
+ )
+ ( /50DE93D8 $noname  Q3 PNP {Lib=PNP}
+  (    1 N-000005 )
+  (    2 N-000003 )
+  (    3 /SLIDER3 )
+ )
+ ( /50DE93DE $noname  R20 R {Lib=R}
+  (    1 VCC )
+  (    2 N-000003 )
+ )
+ ( /50DE93E4 $noname  R21 R {Lib=R}
+  (    1 N-000003 )
+  (    2 GND )
+ )
+ ( /50DE93EA $noname  R24 R {Lib=R}
+  (    1 VCC )
+  (    2 N-000005 )
+ )
+ ( /50DE93FD $noname  P3 S3 {Lib=CONN_2}
+  (    1 /SLIDER3 )
+  (    2 GND )
+ )
+ ( /50DF68AC $noname  RV1 5k {Lib=POT}
+  (    1 VCC )
+  (    2 /difV )
+  (    3 GND )
+ )
+ ( /50DF6D5F $noname  P4 CONN_2 {Lib=CONN_2}
+  (    1 /ACCELEROMETER1x )
+  (    2 /ACCELEROMETER2x )
+ )
+ ( /50DF6D6E $noname  P5 CONN_2 {Lib=CONN_2}
+  (    1 /PEDAL1 )
+  (    2 /PEDAL2 )
+ )
+ ( /50DF6D7D $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 /SLIDER1 )
+  (    2 /SLIDER2 )
+  (    3 /SLIDER3 )
+ )
+ ( /50DF6ECB $noname  C6 C {Lib=C}
+  (    1 GND )
+  (    2 /ACCELEROMETER2x )
+ )
+ ( /50DF6EF0 $noname  C5 C {Lib=C}
+  (    1 GND )
+  (    2 /ACCELEROMETER1x )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ CP*
+ SM*
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component R18
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R19
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R23
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R16
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R17
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R22
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R20
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R21
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R24
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "GND" "GND"
+ P7 2
+ P2 2
+ C2 2
+ R7 1
+ R17 2
+ C6 1
+ RV1 3
+ C4 2
+ U2 11
+ R19 2
+ C3 2
+ P3 2
+ R8 1
+ P1 2
+ R21 2
+ C5 1
+ C1 2
+Net 2 "/SLIDER1" "SLIDER1"
+ K1 1
+ P1 1
+ Q1 3
+Net 3 "" ""
+ Q3 2
+ R20 2
+ R21 1
+Net 4 "" ""
+ Q1 1
+ R22 2
+Net 5 "" ""
+ R24 2
+ Q3 1
+Net 6 "" ""
+ Q2 2
+ R19 1
+ R18 2
+Net 7 "" ""
+ Q2 1
+ R23 2
+Net 8 "/SLIDER2" "SLIDER2"
+ Q2 3
+ K1 2
+ P2 1
+Net 9 "" ""
+ R17 1
+ R16 2
+ Q1 2
+Net 10 "/ACCELEROMETER2x" "ACCELEROMETER2x"
+ C6 2
+ P4 2
+ R3 1
+Net 11 "/PEDAL2" "PEDAL2"
+ R14 2
+ C4 1
+ P5 2
+Net 12 "/SLIDER3" "SLIDER3"
+ Q3 3
+ K1 3
+ P3 1
+Net 13 "VCC" "VCC"
+ C1 1
+ C2 1
+ R18 1
+ R23 1
+ R22 1
+ RV1 1
+ P7 1
+ U2 4
+ R16 1
+ R24 1
+ R20 1
+Net 14 "" ""
+ R11 1
+ R4 2
+ U2 6
+Net 15 "/difV" "difV"
+ R4 1
+ RV1 2
+ R2 1
+Net 16 "" ""
+ R8 2
+ R3 2
+ U2 5
+Net 17 "/ACCELEROMETER1x" "ACCELEROMETER1x"
+ R1 1
+ P4 1
+ C5 2
+Net 18 "" ""
+ R1 2
+ R7 2
+ U2 3
+Net 19 "/PEDAL1" "PEDAL1"
+ P5 1
+ R13 2
+ C3 1
+Net 20 "" ""
+ R2 2
+ R10 1
+ U2 2
+Net 21 "" ""
+ R14 1
+ R11 2
+ U2 7
+Net 22 "" ""
+ R13 1
+ R10 2
+ U2 1
+}
+#End
