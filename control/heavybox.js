@@ -1,13 +1,6 @@
 loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
-
-var cssCode = "label { fontSize: '32px'; color: 'red'; }";
-var styleElement = document.createElement("style");
-styleElement.type = "text/css";
-styleElement.appendChild(document.createTextNode(cssCode));
-document.getElementsByTagName("head")[0].appendChild(styleElement);
-
 pages = [
 
 [
@@ -15,10 +8,10 @@ pages = [
     "name": "infoText",
     "type": "Label",
     "x": 0.01, "y": 0,
-    "width": 0.1, "height": 0.1,
+    "width": 0.2, "height": 0.1,
     "value": "RACK 1",
 	"align": "left",
-	"oninit" : "infoText.label.style.fontSize = '32px'"
+	"oninit" : "infoText.label.style.fontSize = '48px'"
 },
 {
      "name" : "tuner",
