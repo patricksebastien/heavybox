@@ -1,7 +1,7 @@
 loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
-var cssCode = "h3 { font-size: 32px; }";
+var cssCode = ".label { font-size: 32px; color: red; }";
 var styleElement = document.createElement("style");
 styleElement.type = "text/css";
 styleElement.appendChild(document.createTextNode(cssCode));
