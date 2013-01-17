@@ -2,7 +2,7 @@ loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
 
-var cssCode = "label { fontSize: 32px; color: red; }";
+var cssCode = "label { fontSize: '32px'; color: 'red'; }";
 var styleElement = document.createElement("style");
 styleElement.type = "text/css";
 styleElement.appendChild(document.createTextNode(cssCode));
@@ -18,6 +18,7 @@ pages = [
     "width": 0.1, "height": 0.1,
     "value": "RACK 1",
 	"align": "left",
+	"oninit" : "myLabel.label.style.fontSize = '32px'"
 },
 {
      "name" : "tuner",
