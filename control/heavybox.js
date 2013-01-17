@@ -16,9 +16,17 @@ pages = [
 {
      "name" : "tuner",
      "type" : "MultiSlider",
+     "width" : .4, "height" : .2,
      "x" : 0.08, "y" : 0,
-     "width" : .4, "height" : .5,
      "numberOfSliders" : 6,
+     "isVertical" : true,
+},
+{
+     "name" : "volume",
+     "type" : "MultiSlider",
+     "width" : .4, "height" : .2,
+     "x" : 0.01, "y" : 0.3,
+     "numberOfSliders" : 3,
      "isVertical" : true,
 },
 {
