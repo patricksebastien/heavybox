@@ -8,16 +8,22 @@ pages = [
 {
     "name": "infoText",
     "type": "Label",
-    "x": 0, "y": 0,
+    "x": 0.05, "y": 0,
     "width": 0.1, "height": 0.1,
     "value": "RACK 1",
 	"align": "left",
-	"backgroundColor": "rgba(1,0,0,1)",
 },
+{
+    "name" : "mySlider",
+    "type" : "Slider",
+    "x" : 0.05, "y" : 0.2,
+    "width" : .25, "height" : .75,
+    "address" : "/vol",
+}
 {
     "name": "refresh",
     "type": "Button",
-    "bounds": [.6, .8, .2, .1],
+    "bounds": [.6, .85, .2, .1],
     "startingValue": 0,
     "isLocal": true,
     "mode": "contact",
@@ -28,7 +34,7 @@ pages = [
 {
     "name": "tabButton",
     "type": "Button",
-    "bounds": [.8, .9, .2, .1],
+    "bounds": [.8, .85, .2, .1],
     "mode": "toggle",
     "stroke": "#aaa",
     "isLocal": true,
