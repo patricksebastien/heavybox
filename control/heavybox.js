@@ -9,9 +9,18 @@ pages = [
     "name": "infoText",
     "type": "Label",
     "x": 0, "y": 0,
-    "width": 1, "height": 1,
-    "value": "this is your label text centered on the screen",
+    "width": 0.1, "height": 0.1,
+    "value": "RACK 1",
+	"align": "left",
+	"backgroundColor": "rgba(1,0,0,1)",
 },
+{
+     "name" : "myButton",
+     "type" : "MultiButton",
+     "x" : 0.1, "y" : 0,
+     "width" : 0.9, "height" : .8,
+     "rows" : 1, "columns" : 6,
+}
 {
     "name": "refresh",
     "type": "Button",
