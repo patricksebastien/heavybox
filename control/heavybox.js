@@ -8,7 +8,7 @@ pages = [
     "name": "infoText",
     "type": "Label",
     "x": 0.01, "y": 0,
-    "width": 1, "height": 0.1,
+    "width": 1, "height": 0.5,
     "value": "RACK 1",
 	"align": "left",
 	"oninit" : "infoText.label.style.fontSize = '48px'"
