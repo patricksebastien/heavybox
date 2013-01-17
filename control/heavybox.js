@@ -24,13 +24,13 @@ pages = [
 {
     "name": "refresh",
     "type": "Button",
-    "bounds": [.6, .9, .2, .1],
+    "bounds": [.6, .8, .2, .1],
     "startingValue": 0,
     "isLocal": true,
     "mode": "contact",
     "ontouchstart": "interfaceManager.refreshInterface()",
     "stroke": "#aaa",
-    "label": "refrsh",
+    "label": "refresh",
 },
 {
     "name": "tabButton",
@@ -43,6 +43,7 @@ pages = [
     "label": "menu",
 },
 ]
+
 
 
 
