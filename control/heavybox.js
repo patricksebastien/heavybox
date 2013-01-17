@@ -19,7 +19,7 @@ pages = [
     "x" : 0.05, "y" : 0.2,
     "width" : .25, "height" : .75,
     "address" : "/vol",
-}
+},
 {
     "name": "refresh",
     "type": "Button",
