@@ -18,7 +18,7 @@ pages = [
     "width": 0.1, "height": 0.1,
     "value": "RACK 1",
 	"align": "left",
-	"oninit" : "myLabel.label.style.fontSize = '32px'"
+	"oninit" : "infoText.label.style.fontSize = '32px'"
 },
 {
      "name" : "tuner",
