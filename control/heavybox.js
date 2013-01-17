@@ -1,6 +1,11 @@
 loadedInterfaceName = "heavybox";
-
 interfaceOrientation = "landscape";
+
+var cssCode = "h3 { font-size: 32px; }";
+var styleElement = document.createElement("style");
+styleElement.type = "text/css";
+styleElement.appendChild(document.createTextNode(cssCode));
+document.getElementsByTagName("head")[0].appendChild(styleElement);
 
 pages = [
 
