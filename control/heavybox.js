@@ -11,7 +11,7 @@ pages = [
     "width": 1, "height": 0.5,
     "value": "RACK 1",
 	"align": "left",
-	"oninit" : "infoText.label.style.fontSize = '48px'"
+	"oninit" : "infoText.label.style.fontSize = '48px'",
 	"verticalCenter": false,
 },
 {
