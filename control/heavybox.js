@@ -15,13 +15,6 @@ pages = [
 	"backgroundColor": "rgba(1,0,0,1)",
 },
 {
-     "name" : "myButton",
-     "type" : "MultiButton",
-     "x" : 0.1, "y" : 0,
-     "width" : 0.9, "height" : .8,
-     "rows" : 1, "columns" : 6,
-}
-{
     "name": "refresh",
     "type": "Button",
     "bounds": [.6, .8, .2, .1],
