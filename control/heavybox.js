@@ -1,8 +1,21 @@
 loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
-
-
+oscManager.delegate = {
+    processOSC : function(oscAddress, typetags, args) {
+        switch(oscAddress) {
+            case "/p":
+                control.changePage('previous');
+                break;
+			case "/n":
+                control.changePage('next');
+                break;
+            case "/c":
+                control.changePage(args[0]);
+                break;
+        }
+    }
+}
 
 constants = [
 	{
