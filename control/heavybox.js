@@ -2,6 +2,21 @@ loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
 
+oscManager.delegate = {
+    processOSC : function(oscAddress, typetags, args) {
+        switch(oscAddress) {
+            case "/p":
+                control.changePage('previous');
+                break;
+			case "/n":
+                control.changePage('next');
+                break;
+            case "/c":
+                control.changePage(args[0]);
+                break;
+        }
+    }
+}
 
 constants = [
 	{
@@ -55,7 +70,7 @@ pages = [
 		 "x" : 0.3, "y" : 0,
 		 "numberOfSliders" : 6,
 		 "isVertical" : true,
-		 "address": "/tuner",
+		 "address": "/t",
 	},
 	{
 		 "name" : "volume",
@@ -64,13 +79,7 @@ pages = [
 		 "x" : 0.01, "y" : 0.3,
 		 "numberOfSliders" : 3,
 		 "isVertical" : true,
-	},
-	{
-		"name":"oui",
-		"type":"Slider",
-		"x":0.4, "y":0.4,
-		"width":.4, "height":.3,
-		"address": "/oui",
+		 "address": "/v",
 	},
 ],
 /********** RACK 1 *************/
