@@ -1,8 +1,6 @@
 loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
-
-
 constants = [
 {
     "name": "nextBtn",
@@ -36,16 +34,16 @@ constants = [
 ];
 
 pages = [
-
+/********** PAGE 1 *************/
 [
 {
     "name": "infoText",
     "type": "Label",
     "x": 0.01, "y": 0,
-    "width": 1, "height": 0.5,
-    "value": "RACK 1",
+    "width": 1, "height": 0.1,
+    "value": "TUNING",
 	"align": "left",
-	"size": "60",
+	"size": "48",
 	"verticalCenter": false,
 },
 {
