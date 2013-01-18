@@ -73,6 +73,7 @@ pages = [
 		 "numberOfSliders" : 6,
 		 "isVertical" : true,
 		 "address": "/t",
+		 "min" : 0, "max" : 1000,
 	},
 	{
 		 "name" : "volume",
