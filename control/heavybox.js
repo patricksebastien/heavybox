@@ -20,37 +20,6 @@ oscManager.delegate = {
     }
 }
 
-constants = [
-	{
-		"name": "nextBtn",
-		"type": "Button",
-		"bounds": [0,.9,.2,.1], 
-		"label": "<-",
-		"mode": "contact",    
-		"ontouchstart": "control.changePage('previous');",
-		"stroke": "#aaa",    
-	},
-	{
-		"name": "page2Btn",
-		"type": "Button",
-		"bounds": [.2,.9,.2,.1], 
-		"label": "->",
-		"mode": "contact",    
-		"ontouchstart": "control.changePage('next');",
-		"stroke": "#aaa",    
-	},
-	{
-		"name": "refresh",
-		"type": "Button",
-		"bounds": [.6, .9, .2, .1],
-		"startingValue": 0,
-		"isLocal": true,
-		"mode": "contact",
-		"ontouchstart": "interfaceManager.refreshInterface()",
-		"stroke": "#aaa",
-		"label": "refresh",
-	},
-];
 
 pages = [
 /********** TUNING *************/
