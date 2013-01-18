@@ -50,7 +50,7 @@ pages = [
 		 "name" : "tuner",
 		 "type" : "MultiSlider",
 		 "width" : .5, "height" : .2,
-		 "x" : 0.14, "y" : 0,
+		 "x" : 0.3, "y" : 0,
 		 "numberOfSliders" : 6,
 		 "isVertical" : true,
 		 "address": "/tuner",
