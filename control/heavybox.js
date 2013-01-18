@@ -13,6 +13,9 @@ oscManager.delegate = {
             case "/c":
                 control.changePage(args[0]);
                 break;
+			default:
+                oscManager.processOSC(oscAddress, typetags, args);
+                break;
         }
     }
 }
