@@ -1,0 +1,113 @@
+#N canvas 124 171 1280 728 10;
+#X declare -lib mrpeach;
+#X obj -890 -210 unpackOSC;
+#X obj -22 -74 udpsend;
+#X obj -22 -52 tgl 15 0 empty empty connected 20 7 0 8 -24198 -241291
+-1 0 1;
+#X text -901 -365 TO RECIEVE OSC FROM CONTROL:;
+#X text -893 -318 -2: Load up any interface in Control and press some
+buttons;
+#X text -388 -371 TO SEND OSC TO CONTROL:;
+#X text -378 -361 -1: Make sure Control is on the same network and
+its recieve port is still the default 8080;
+#X msg -10 -190 send /control/createBlankInterface myInterface portrait
+;
+#X text -787 -210 This converts those packets to readable form;
+#X text -788 -185 This tells Pd to print those packets to the parent
+window;
+#X obj -890 -185 print;
+#X text -871 -506 -2: Scan the list for 'mrpeach' \, if it's not there
+click 'New...' and type in 'mrpeach' (no quote marks);
+#X text -871 -483 -3: Click OK \, OK again and restart Pd;
+#X text -379 -590 INFORMATION ABOUT IP ADDRESSES:;
+#X obj -890 -234 udpreceive 10000;
+#X text -891 -355 -1: Make sure Control is on the same network and
+set its destination URL to this computer's IP address and leave its
+destination port as the default 10000;
+#X obj -10 -256 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text -894 -279 -4: To do useful stuff with recieved OCC \, use;
+#X obj -614 -279 routeOSC;
+#X text -894 -263 -5: The Pd objects listening for OSC are explained
+below;
+#X text -893 -304 -3: You should see the OSC messages appear in the
+Pd log window (seperate window);
+#X obj -10 -121 packOSC;
+#X obj -10 -210 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text -380 -326 -2: Switch into edit mode (Ctrl-E/Command-E) then
+double click this message object --> and enter the correct IP address
+of the device running Control here \, it should read 'connect <ip address>
+8080';
+#X text -380 -271 -3: Switch out of edit mode (Ctrl-E/Command-E) and
+click this button --> This sends the 'connect' message you just edited
+to the udpsend object below \, so udpsend knows where to send messages
+;
+#X text -373 -480 If you want to go deeper into Pd \, I highly recomend
+the video series by Rafael Hernandez \, http://www.youtube.com/watch?v=rxHIJx-O3iU
+;
+#X text -369 -577 -To find IP on Windows \, type 'cmd' into the Run
+dialog and at the prompt type 'ipconfig' \, look for 'IPv4 Address'
+-To find IP on Mac OSX \, open terminal and type 'ifconfig' -To find
+IP on your Android/iOS device \, it varies so google it -You may like
+to use broadcast IP to send OSC to multiple device running control
+at once. If your computer's IP is 192.168.xxx.xxx \, your broadcast
+should be 192.168.xxx.255;
+#X text -880 -576 Before you begin \, this file is for use with Pd-extended
+http://puredata.info/community/projects/software/pd-extended and you
+must have Pd loading mrpeach librarys at startup;
+#X text -787 -235 This tells Pd to listen for UDP packets on port 10000
+;
+#X text -381 -213 -5: Open any interface in Control \, then hit this
+button --> and Control should switch to the blank interface;
+#X text -383 -167 -6: For examples of messages that Control understands
+\, see http://charlie-roberts.com/Control/?page_id=297 -In edit mode
+\, press Ctrl-2/Command-2 to make a new message object then type 'send
+<osc message & arguments>' \, then connect its output to this packOSC's
+input -->. Finally \, click that message (not in edit mode) to send
+it to Control.;
+#X text -810 -618 Control <> Pd \, A basic tutorial. Version 1;
+#X text -871 -528 -1: Open 'Startup...' from the File menu (Windows)
+or the Preferences menu (OSX);
+#X obj -552 -16 import mrpeach;
+#X msg -22 -322 connect 192.168.1.129 8080;
+#X floatatom 235 -28 5 0 0 0 - - -;
+#X msg 162 -122 send /p null;
+#X msg 158 -97 send /n null;
+#X msg 157 -64 send /c \$1;
+#X floatatom 64 28 5 0 0 0 - - -;
+#X floatatom 170 8 5 0 0 0 - - -;
+#X msg 55 -403 disconnect;
+#X msg 61 53 send /v/1 \$1;
+#X floatatom -77 15 5 0 0 0 - - -;
+#X msg -80 40 send /v/0 \$1;
+#X obj -239 -29 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -313 2 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg -209 7 send /v/0 0.5;
+#X msg -283 38 send /v/0 0.2;
+#X msg 162 35 send /t/0 \$1;
+#X connect 0 0 10 0;
+#X connect 1 0 2 0;
+#X connect 7 0 21 0;
+#X connect 14 0 0 0;
+#X connect 16 0 34 0;
+#X connect 21 0 1 0;
+#X connect 22 0 7 0;
+#X connect 34 0 1 0;
+#X connect 35 0 38 0;
+#X connect 36 0 21 0;
+#X connect 37 0 21 0;
+#X connect 38 0 21 0;
+#X connect 39 0 42 0;
+#X connect 40 0 49 0;
+#X connect 41 0 1 0;
+#X connect 42 0 21 0;
+#X connect 43 0 44 0;
+#X connect 44 0 21 0;
+#X connect 45 0 47 0;
+#X connect 46 0 48 0;
+#X connect 47 0 21 0;
+#X connect 48 0 21 0;
+#X connect 49 0 21 0;
