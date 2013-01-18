@@ -4,13 +4,13 @@ interfaceOrientation = "landscape";
 oscManager.delegate = {
     processOSC : function(oscAddress, typetags, args) {
         switch(oscAddress) {
-            case "/previousPage":
+            case "/p":
                 control.changePage('previous');
                 break;
-			case "/nextPage":
+			case "/n":
                 control.changePage('next');
                 break;
-            case "/changeToPage":
+            case "/c":
                 control.changePage(args[0]);
                 break;
         }
