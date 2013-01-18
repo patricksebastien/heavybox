@@ -32,17 +32,7 @@ constants = [
     "ontouchstart": "interfaceManager.refreshInterface()",
     "stroke": "#aaa",
     "label": "refresh",
-},
-{
-    "name": "tabButton",
-    "type": "Button",
-    "bounds": [.8, .9, .2, .1],
-    "mode": "toggle",
-    "stroke": "#aaa",
-    "isLocal": true,
-    "ontouchstart": "if(this.value == this.max) { control.showToolbar(); } else { control.hideToolbar(); }",
-    "label": "menu",
-},
+}
 ];
 
 pages = [
@@ -55,7 +45,7 @@ pages = [
     "width": 1, "height": 0.5,
     "value": "RACK 1",
 	"align": "left",
-	"oninit" : "infoText.label.style.fontSize = '48px'",
+	"size": "60",
 	"verticalCenter": false,
 },
 {
