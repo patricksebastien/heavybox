@@ -66,11 +66,11 @@ pages = [
 		 "isVertical" : true,
 	},
 	{
-    "name":"OUI",
-    "type":"Slider",
-    "x":0.4, "y":0.4,
-    "width":.4, "height":.3,
-	"address": "/oui",
+		"name":"oui",
+		"type":"Slider",
+		"x":0.4, "y":0.4,
+		"width":.4, "height":.3,
+		"address": "/oui",
 	},
 ],
 /********** RACK 1 *************/
