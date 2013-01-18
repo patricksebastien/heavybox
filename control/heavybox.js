@@ -49,10 +49,11 @@ pages = [
 	{
 		 "name" : "tuner",
 		 "type" : "MultiSlider",
-		 "width" : .4, "height" : .2,
-		 "x" : 0.08, "y" : 0,
+		 "width" : .5, "height" : .2,
+		 "x" : 0.14, "y" : 0,
 		 "numberOfSliders" : 6,
 		 "isVertical" : true,
+		 "address": "/tuner",
 	},
 	{
 		 "name" : "volume",
