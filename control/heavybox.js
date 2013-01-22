@@ -13,6 +13,14 @@ oscManager.delegate = {
             case "/c":
                 control.changePage(args[0]);
                 break;
+			case "/w":
+				var w = control.getWidgetWithName(arguments[0]);
+				w.setColors(["#ff0", "#f30", "#3ff"]);
+				break;
+			case "/x":
+				var w = control.getWidgetWithName("tuning");
+				w.setColors(["#ff0", "#f30", "#3ff"]);
+				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
                 break;
