@@ -40,9 +40,10 @@ pages = [
 		 "width" : .5, "height" : .2,
 		 "x" : 0.3, "y" : 0,
 		 "isVertical" : false,
-		 "address": "/t",
+		 "address": "/tuning",
 		 "min" : 0, "max" : 1,
 		 "color" : "rgb(255,0,0)",
+		 "stroke" : "rgb(255,255,255)",
 	},
 	{
 		 "name" : "volume",
