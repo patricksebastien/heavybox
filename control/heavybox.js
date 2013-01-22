@@ -66,6 +66,17 @@ pages = [
 		"oninit" : "infoText.label.style.fontSize = '48px'",
 		"verticalCenter": false,
 	},
+	{
+		"name": "refresh",
+		"type": "Button",
+		"bounds": [.6, .9, .2, .1],
+		"startingValue": 0,
+		"isLocal": true,
+		"mode": "contact",
+		"ontouchstart": "interfaceManager.refreshInterface()",
+		"stroke": "#aaa",
+		"label": "refrsh",
+	},
 ],
 
 
