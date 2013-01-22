@@ -43,7 +43,7 @@ pages = [
 		 "address": "/tuning",
 		 "min" : 0, "max" : 1,
 		 "color" : "rgb(255,0,0)",
-		 "stroke" : "rgb(255,255,255)",
+		 "stroke" : "rgb(122,155,155)",
 	},
 	{
 		 "name" : "volume",
