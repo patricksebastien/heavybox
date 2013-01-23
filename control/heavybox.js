@@ -1,6 +1,11 @@
 loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
+/*red: ff1b1b
+green: 50d228
+orange: ff863d
+blue: 3dafff
+*/
 oscManager.delegate = {
     processOSC : function(oscAddress, typetags, args) {
         switch(oscAddress) {
