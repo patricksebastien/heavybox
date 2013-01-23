@@ -17,6 +17,10 @@ oscManager.delegate = {
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#ff0", "#f30", "#3ff"]);
 				break;
+			case "/setColors":
+				var w = control.getWidgetWithName(arguments[2]);
+				w.setColors([arguments[3], arguments[4], arguments[5]]);
+				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
                 break;
