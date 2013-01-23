@@ -13,20 +13,8 @@ oscManager.delegate = {
             case "/c":
                 control.changePage(args[0]);
                 break;
-			case "/w":
-				var w = control.getWidgetWithName(arguments[1]);
-				w.setColors(["#ff0", "#f30", "#3ff"]);
-				break;
-			case "/x":
-				var w = control.getWidgetWithName("tuning");
-				w.setColors(["#ff0", "#f30", "#3ff"]);
-				break;
-			case "/y":
+			case "/setColor":
 				var w = control.getWidgetWithName(arguments[2]);
-				w.setColors(["#ff0", "#f30", "#3ff"]);
-				break;
-			case "/z":
-				var w = control.getWidgetWithName(arguments[3]);
 				w.setColors(["#ff0", "#f30", "#3ff"]);
 				break;
 			default:
