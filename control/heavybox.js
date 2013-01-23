@@ -13,13 +13,9 @@ oscManager.delegate = {
             case "/c":
                 control.changePage(args[0]);
                 break;
-			case "/a":
+			case "/ai":
 				var w = control.getWidgetWithName(arguments[2]);
-				w.setColors(["#ff0", "#f30", "#3ff"]);
-				break;
-			case "/b":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setColors([arguments[3], arguments[4], arguments[5]]);
+				w.setColors(["#ff1b1b", "#50d228", "#ff863d"]);
 				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
