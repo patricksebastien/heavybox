@@ -13,11 +13,11 @@ oscManager.delegate = {
             case "/c":
                 control.changePage(args[0]);
                 break;
-			case "/setColor":
+			case "/a":
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#ff0", "#f30", "#3ff"]);
 				break;
-			case "/setColors":
+			case "/b":
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors([arguments[3], arguments[4], arguments[5]]);
 				break;
