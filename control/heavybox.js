@@ -59,7 +59,7 @@ pages = [
 		 "name" : "tuning",
 		 "type" : "Slider",
 		 "width" : .7, "height" : .15,
-		 "x" : 0.3, "y" : 0.01,
+		 "x" : 0.3, "y" : 0.02,
 		 "isVertical" : false,
 		 "address": "/tuning",
 		 "min" : 0, "max" : 1,
@@ -77,11 +77,11 @@ pages = [
 	{
 		"name": "eqText",
 		"type": "Label",
-		"x": 0.01, "y": 0.6,
+		"x": 0.01, "y": 0.5,
 		"width": 1, "height": 0.5,
 		"value": "EQ",
 		"align": "left",
-		"oninit" : "eqText.label.style.fontSize = '48px'",
+		"oninit" : "eqText.label.style.fontSize = '24px'",
 		"verticalCenter": false,
 	},
 	{
