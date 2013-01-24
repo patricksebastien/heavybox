@@ -62,7 +62,7 @@ pages = [
 		"width": 0.45, "height": 0.5,
 		"value": "NOTE",
 		"align": "left",
-		"oninit" : "infoText.label.style.fontSize = '48px'",
+		"oninit" : "noteText.label.style.fontSize = '48px'",
 		"verticalCenter": false,
 	},
 	{
@@ -81,7 +81,7 @@ pages = [
 		"width": 1, "height": 0.5,
 		"value": "EQ",
 		"align": "left",
-		"oninit" : "infoText.label.style.fontSize = '48px'",
+		"oninit" : "eqText.label.style.fontSize = '48px'",
 		"verticalCenter": false,
 	},
 	{
