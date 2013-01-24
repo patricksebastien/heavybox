@@ -30,7 +30,7 @@ oscManager.delegate = {
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#000", "#ff863d", "#fff"]);
 				break;
-			case "/blu":
+			case "/bl":
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#000", "#3dafff", "#fff"]);
 				break;
