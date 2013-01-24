@@ -59,7 +59,7 @@ pages = [
 		 "name" : "tuning",
 		 "type" : "Slider",
 		 "width" : .7, "height" : .15,
-		 "x" : 0.3, "y" : 0.05,
+		 "x" : 0.3, "y" : 0.01,
 		 "isVertical" : false,
 		 "address": "/tuning",
 		 "min" : 0, "max" : 1,
