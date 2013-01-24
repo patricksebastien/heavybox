@@ -18,9 +18,21 @@ oscManager.delegate = {
             case "/c":
                 control.changePage(args[0]);
                 break;
-			case "/ai":
+			case "/red":
 				var w = control.getWidgetWithName(arguments[2]);
-				w.setColors(["#ff1b1b", "#50d228", "#ff863d"]);
+				w.setColors(["#000", "#ff1b1b", "#fff"]);
+				break;
+			case "/green":
+				var w = control.getWidgetWithName(arguments[2]);
+				w.setColors(["#000", "#50d228", "#fff"]);
+				break;
+			case "/orange":
+				var w = control.getWidgetWithName(arguments[2]);
+				w.setColors(["#000", "#ff863d", "#fff"]);
+				break;
+			case "/blue":
+				var w = control.getWidgetWithName(arguments[2]);
+				w.setColors(["#000", "#3dafff", "#fff"]);
 				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
@@ -44,15 +56,33 @@ pages = [
 		"verticalCenter": false,
 	},
 	{
+		"name": "noteText",
+		"type": "Label",
+		"x": 0.55, "y": 0,
+		"width": 0.45, "height": 0.5,
+		"value": "NOTE",
+		"align": "left",
+		"oninit" : "infoText.label.style.fontSize = '48px'",
+		"verticalCenter": false,
+	},
+	{
 		 "name" : "tuning",
 		 "type" : "Slider",
-		 "width" : .5, "height" : .2,
-		 "x" : 0.3, "y" : 0,
+		 "width" : .7, "height" : .15,
+		 "x" : 0.3, "y" : 0.05,
 		 "isVertical" : false,
 		 "address": "/tuning",
 		 "min" : 0, "max" : 1,
-		 "color" : "rgb(255,0,0)",
-		 "stroke" : "rgb(122,155,155)",
+	},
+	{
+		"name": "eqText",
+		"type": "Label",
+		"x": 0.01, "y": 0.6,
+		"width": 1, "height": 0.5,
+		"value": "EQ",
+		"align": "left",
+		"oninit" : "infoText.label.style.fontSize = '48px'",
+		"verticalCenter": false,
 	},
 	{
 		 "name" : "volume",
