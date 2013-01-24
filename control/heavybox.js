@@ -36,7 +36,7 @@ oscManager.delegate = {
 				break;
 			case "/t":
 				var w = control.getWidgetWithName(arguments[2]);
-				w.setValues("dddd");
+				w.setValue("dddd");
 				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
