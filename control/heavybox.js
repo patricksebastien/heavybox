@@ -22,15 +22,15 @@ oscManager.delegate = {
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#000", "#ff1b1b", "#fff"]);
 				break;
-			case "/g":
+			case "/gr":
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#000", "#50d228", "#fff"]);
 				break;
-			case "/o":
+			case "/or":
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#000", "#ff863d", "#fff"]);
 				break;
-			case "/b":
+			case "/blu":
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#000", "#3dafff", "#fff"]);
 				break;
