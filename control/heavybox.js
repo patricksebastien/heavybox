@@ -56,6 +56,15 @@ pages = [
 		"verticalCenter": false,
 	},
 	{
+		 "name" : "tuning",
+		 "type" : "Slider",
+		 "width" : .7, "height" : .15,
+		 "x" : 0.3, "y" : 0.05,
+		 "isVertical" : false,
+		 "address": "/tuning",
+		 "min" : 0, "max" : 1,
+	},
+	{
 		"name": "noteText",
 		"type": "Label",
 		"x": 0.55, "y": 0,
@@ -64,15 +73,6 @@ pages = [
 		"align": "left",
 		"oninit" : "noteText.label.style.fontSize = '48px'",
 		"verticalCenter": false,
-	},
-	{
-		 "name" : "tuning",
-		 "type" : "Slider",
-		 "width" : .7, "height" : .15,
-		 "x" : 0.3, "y" : 0.05,
-		 "isVertical" : false,
-		 "address": "/tuning",
-		 "min" : 0, "max" : 1,
 	},
 	{
 		"name": "eqText",
