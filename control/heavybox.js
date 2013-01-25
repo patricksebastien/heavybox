@@ -40,7 +40,7 @@ oscManager.delegate = {
 				break;
 			case "/ta":
 				var w = control.getWidgetWithName(arguments[2]);
-				w.setValue(arguments[2].replace(arguments[2],""));
+				w.setValue(arguments[2].substring(1,3));
 				break;
 			case "/tl":
 				var w = control.getWidgetWithName(arguments[2]);
