@@ -15,44 +15,9 @@ oscManager.delegate = {
 			case "/n":
                 control.changePage('next');
                 break;
-            case "/c":
-                control.changePage(args[0]);
-                break;
-			case "/cr":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setColors(["#000", "#ff1b1b", "#fff"]);
-				break;
-			case "/cg":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setColors(["#000", "#50d228", "#fff"]);
-				break;
-			case "/co":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setColors(["#000", "#ff863d", "#fff"]);
-				break;
-			case "/cb":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setColors(["#000", "#3dafff", "#fff"]);
-				break;
 			case "/ta":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setValue(args[0]);
-				break;
-			case "/tb":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setValue(args[1]);
-				break;
-			case "/tc":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setValue(args[2]);
-				break;
-			case "/tl":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setValue("fdsfds");
-				break;
-			case "/wl":
-				var w = control.getWidgetWithName(arguments[2]);
-				w.setValue("wtf");
+				var w = control.getWidgetWithName(args[2]);
+				w.setValue("fff");
 				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
