@@ -34,15 +34,17 @@ oscManager.delegate = {
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setColors(["#000", "#3dafff", "#fff"]);
 				break;
-			case "/t":
-				var w = control.getWidgetWithName(arguments[2]);
-				var f = arguments[2];
-				var v = f.substr(1, 3);
-				w.setValue(v);
-				break;
 			case "/ta":
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setValue(args[0]);
+				break;
+			case "/tb":
+				var w = control.getWidgetWithName(arguments[2]);
+				w.setValue(args[1]);
+				break;
+			case "/tc":
+				var w = control.getWidgetWithName(arguments[2]);
+				w.setValue(args[2]);
 				break;
 			case "/tl":
 				var w = control.getWidgetWithName(arguments[2]);
