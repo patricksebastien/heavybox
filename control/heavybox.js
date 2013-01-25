@@ -42,6 +42,10 @@ oscManager.delegate = {
 				var w = control.getWidgetWithName(arguments[2]);
 				w.setValue("fdsfds");
 				break;
+			case "/wl":
+				var w = control.getWidgetWithName(arguments[2]);
+				w.setValue("wtf");
+				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
                 break;
