@@ -18,7 +18,7 @@ oscManager.delegate = {
 			case "/ta":
 				var w = control.getWidgetWithName(args[0]);
 				var test = "not ok";
-				if(args[1] = "rrr") {
+				if(args[1] == "rrr") {
 					test = "ok";
 				}
 				w.setValue(test);
