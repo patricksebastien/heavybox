@@ -17,7 +17,10 @@ oscManager.delegate = {
                 break;
 			case "/ta":
 				var w = control.getWidgetWithName(args[0]);
-				var test = args[1];
+				var test = "not ok";
+				if(args[1] = "rrr") {
+					test = "ok";
+				}
 				w.setValue(test);
 				break;
 			case "/tb":
