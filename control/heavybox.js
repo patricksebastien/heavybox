@@ -19,6 +19,18 @@ oscManager.delegate = {
 				var w = control.getWidgetWithName(args[0]);
 				w.setValue(args[1]);
 				break;
+			case "/tb":
+				var w = control.getWidgetWithName(args[0]);
+				w.setValue(args[2]);
+				break;
+			case "/tc":
+				var w = control.getWidgetWithName(args[0]);
+				w.setValue(args[0]);
+				break;
+			case "/td":
+				var w = control.getWidgetWithName(args[0]);
+				w.setValue(args[1].ToString());
+				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
                 break;
@@ -86,7 +98,7 @@ pages = [
 		"type": "Label",
 		"x": 0.01, "y": 0,
 		"width": 1, "height": 0.5,
-		"value": "RACK 1dd",
+		"value": "RACK 1ddd",
 		"align": "left",
 		"oninit" : "infoText.label.style.fontSize = '48px'",
 		"verticalCenter": false,
