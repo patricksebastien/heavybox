@@ -17,7 +17,7 @@ oscManager.delegate = {
                 break;
 			case "/ta":
 				var w = control.getWidgetWithName(args[0]);
-				w.setValue("fff");
+				w.setValue(args[1]);
 				break;
 			default:
                 oscManager.processOSC(oscAddress, typetags, args);
@@ -86,7 +86,7 @@ pages = [
 		"type": "Label",
 		"x": 0.01, "y": 0,
 		"width": 1, "height": 0.5,
-		"value": "RACK 1d",
+		"value": "RACK 1dd",
 		"align": "left",
 		"oninit" : "infoText.label.style.fontSize = '48px'",
 		"verticalCenter": false,
