@@ -330,9 +330,9 @@ pages = [
 	{
 		"name": "gateText",
 		"type": "Label",
-		"x": 0.48, "y": 0.54,
+		"x": 0.47, "y": 0.54,
 		"width": 0.6, "height": 0.5,
-		"value": "Clip",
+		"value": "Gate Threshold",
 		"align": "left",
 		"oninit" : "gateText.label.style.fontSize = '11px'",
 		"verticalCenter": false,
@@ -340,7 +340,7 @@ pages = [
 	{
 		 "name" : "gate",
 		 "type" : "MultiSlider",
-		 "x" : 0.48, "y" : 0.58,
+		 "x" : 0.47, "y" : 0.58,
 		 "width" : 0.14, "height" : .3,
 		 "numberOfSliders" : 4,
 		 "startingValue": 1,
