@@ -1,6 +1,10 @@
 loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
+/*
+adb push D:\dropbox\Dropbox\github\heavybox\control\heavybox.js /mnt/sdcard/control
+*/
+
 oscManager.delegate = {
     processOSC : function(oscAddress, typetags, args) {
         switch(oscAddress) {
@@ -302,57 +306,15 @@ pages = [
 		 "strokeColor": "#ffffff",
 		 "color": "#3dafff",
 		 "isVertical" : false,
-		 "address": "/adcVolume",
 	},
 	{
-		 "name" : "adcClip",
-		 "type" : "MultiButton",
-		 "mode" : "momentary",
-		 "x" : 0.41, "y" : 0.58,
-		 "width" : .05, "height" : .3,
-		 "rows" : 4, "columns" : 1,
-		 "address": "/adcClip",
-	},
-	// CALIBRATION-----------------------------------------------------
-	{
-		"name": "calibrationText",
-		"type": "Label",
-		"x": 0.45, "y": 0.5,
-		"width": 0.6, "height": 0.5,
-		"value": "CALIBRATION",
-		"align": "left",
-		"oninit" : "calibrationText.label.style.fontSize = '24px'",
-		"verticalCenter": false,
-	},
-	{
-		 "name" : "calibration",
-		 "type" : "MultiSlider",
-		 "x" : 0.01, "y" : 0.58,
-		 "width" : 0.15, "height" : .3,
-		 "numberOfSliders" : 2,
-		 "isVertical" : true,
-		 "address": "/calibration",
-	},
-	// OUTPUT-----------------------------------------------------
-	{
-		"name": "outputText",
-		"type": "Label",
-		"x": 0.7, "y": 0.5,
-		"width": 0.6, "height": 0.5,
-		"value": "VOLUME",
-		"align": "left",
-		"oninit" : "volumeText.label.style.fontSize = '24px'",
-		"verticalCenter": false,
-	},
-	{
-		 "name" : "outputVolume",
-		 "type" : "Slider",
-		 "width" : .15, "height" : .3,
-		 "x" : 0.7, "y" : 0.58,
-		 "isVertical" : true,
-		 "address": "/outputVolume",
-		 "min" : 0, "max" : 1,
-	},
+     "name" : "adcClip",
+     "type" : "MultiButton",
+	 "mode" : "momentary",
+     "x" : 0.41, "y" : 0.58,
+     "width" : .05, "height" : .3,
+     "rows" : 4, "columns" : 1,
+	}
 ],
 /********** RACK 1 *************/
 [
@@ -378,4 +340,7 @@ pages = [
 		"label": "refrsh",
 	},
 ],
+
+
+
 ];
