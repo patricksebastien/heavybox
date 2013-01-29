@@ -308,12 +308,22 @@ pages = [
 		 "isVertical" : false,
 	},
 	{
-     "name" : "adcClip",
-     "type" : "MultiButton",
-	 "mode" : "momentary",
-     "x" : 0.41, "y" : 0.58,
-     "width" : .05, "height" : .3,
-     "rows" : 4, "columns" : 1,
+		"name": "clipText",
+		"type": "Label",
+		"x": 0.41, "y": 0.58,
+		"width": 0.6, "height": 0.5,
+		"value": "clip",
+		"align": "left",
+		"oninit" : "clipText.label.style.fontSize = '8px'",
+		"verticalCenter": false,
+	},
+	{
+		 "name" : "adcClip",
+		 "type" : "MultiButton",
+		 "mode" : "momentary",
+		 "x" : 0.41, "y" : 0.58,
+		 "width" : .05, "height" : .3,
+		 "rows" : 4, "columns" : 1,
 	}
 ],
 /********** RACK 1 *************/
