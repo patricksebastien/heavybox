@@ -1,10 +1,6 @@
 loadedInterfaceName = "heavybox";
 interfaceOrientation = "landscape";
 
-/*
-adb push D:\dropbox\Dropbox\github\heavybox\control\heavybox.js /mnt/sdcard/control
-*/
-
 oscManager.delegate = {
     processOSC : function(oscAddress, typetags, args) {
         switch(oscAddress) {
@@ -325,7 +321,7 @@ pages = [
 		"width": 0.6, "height": 0.5,
 		"value": "CALIBRATION",
 		"align": "left",
-		"oninit" : "volumeText.label.style.fontSize = '24px'",
+		"oninit" : "calibrationText.label.style.fontSize = '24px'",
 		"verticalCenter": false,
 	},
 	{
@@ -382,7 +378,4 @@ pages = [
 		"label": "refrsh",
 	},
 ],
-
-
-
 ];
