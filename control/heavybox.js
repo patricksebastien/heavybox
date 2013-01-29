@@ -306,6 +306,7 @@ pages = [
 		 "strokeColor": "#ffffff",
 		 "color": "#3dafff",
 		 "isVertical" : false,
+		 "address": "/adcVolume",
 	},
 	{
 		"name": "clipText",
@@ -324,7 +325,30 @@ pages = [
 		 "x" : 0.41, "y" : 0.58,
 		 "width" : .05, "height" : .3,
 		 "rows" : 4, "columns" : 1,
-	}
+		 "address": "/adcClip",
+	},
+	{
+		"name": "gateText",
+		"type": "Label",
+		"x": 0.48, "y": 0.54,
+		"width": 0.6, "height": 0.5,
+		"value": "Clip",
+		"align": "left",
+		"oninit" : "gateText.label.style.fontSize = '11px'",
+		"verticalCenter": false,
+	},
+	{
+		 "name" : "gate",
+		 "type" : "MultiSlider",
+		 "x" : 0.48, "y" : 0.58,
+		 "width" : 0.14, "height" : .3,
+		 "numberOfSliders" : 4,
+		 "startingValue": 1,
+		 "strokeColor": "#ffffff",
+		 "color": "#3dafff",
+		 "isVertical" : false,
+		 "address": "/adcGate",
+	},
 ],
 /********** RACK 1 *************/
 [
