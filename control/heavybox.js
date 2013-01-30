@@ -383,7 +383,7 @@ pages = [
 		 "name" : "output",
 		 "type" : "Slider",
 		 "width" : .3, "height" : .3,
-		 "x" : 0.3, "y" : 0.02,
+		 "x" : 0.79, "y" : 0.58,
 		 "isVertical" : true,
 		 "address": "/output",
 		 "min" : 0, "max" : 1,
