@@ -417,7 +417,7 @@ pages = [
 	{
 		 "name" : "record",
 		 "type" : "Button",
-		 "x" : 0.9, "y" : 0.80,
+		 "x" : 0.9, "y" : 0.79,
 		 "width" : .09, "height" : .09,
 		 "color": "#ff1b1b",
 	}
