@@ -379,6 +379,15 @@ pages = [
 		"oninit" : "outputText.label.style.fontSize = '24px'",
 		"verticalCenter": false,
 	},
+	{
+		 "name" : "output",
+		 "type" : "Slider",
+		 "width" : .3, "height" : .3,
+		 "x" : 0.3, "y" : 0.02,
+		 "isVertical" : true,
+		 "address": "/output",
+		 "min" : 0, "max" : 1,
+	},
 ],
 /********** RACK 1 *************/
 [
