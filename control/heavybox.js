@@ -60,6 +60,25 @@ constants = [
     "stroke": "#aaa",    
 },
 {
+    "name": "previousState",
+    "type": "Button",
+    "bounds": [.4,.9,.2,.1], 
+    "label": "<- State",
+    "mode": "contact",    
+    "ontouchstart": "control.changePage('previous');",
+    "stroke": "#aaa",    
+},
+{
+    "name": "nextState",
+    "type": "Button",
+    "bounds": [.6,.9,.2,.1], 
+    "label": "State ->",
+    "mode": "contact",    
+    "ontouchstart": "control.changePage('next');",
+    "stroke": "#aaa",    
+},
+
+{
     "name": "refresh",
     "type": "Button",
     "bounds": [.6, .9, .2, .1],
