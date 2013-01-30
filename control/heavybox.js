@@ -382,7 +382,7 @@ pages = [
 	{
 		 "name" : "output",
 		 "type" : "Slider",
-		 "width" : .3, "height" : .3,
+		 "width" : .2, "height" : .3,
 		 "x" : 0.79, "y" : 0.58,
 		 "isVertical" : true,
 		 "address": "/output",
