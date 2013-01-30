@@ -81,7 +81,7 @@ constants = [
 {
     "name": "refresh",
     "type": "Button",
-    "bounds": [.6, .9, .2, .1],
+    "bounds": [.8, .9, .2, .1],
     "startingValue": 0,
     "isLocal": true,
     "mode": "contact",
