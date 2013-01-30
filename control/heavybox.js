@@ -356,7 +356,7 @@ pages = [
 		"width": 0.6, "height": 0.5,
 		"value": "Calibration",
 		"align": "left",
-		"oninit" : "calibrationText.label.style.fontSize = '11px'",
+		"oninit" : "calibrationText.label.style.fontSize = '24px'",
 		"verticalCenter": false,
 	},
 	{
