@@ -304,7 +304,7 @@ pages = [
 		"protocol": "OSC",
 		"address": "/pan",
 	},
-	// VOLUME-----------------------------------------------------
+	// ADC VOLUME-----------------------------------------------------
 	{
 		"name": "volumeText",
 		"type": "Label",
@@ -327,6 +327,7 @@ pages = [
 		 "isVertical" : false,
 		 "address": "/adcVolume",
 	},
+	// ADC CLIP-----------------------------------------------------
 	{
 		"name": "clipText",
 		"type": "Label",
@@ -346,6 +347,7 @@ pages = [
 		 "rows" : 4, "columns" : 1,
 		 "address": "/adcClip",
 	},
+	// ADC GATE-----------------------------------------------------
 	{
 		"name": "gateText",
 		"type": "Label",
@@ -368,6 +370,7 @@ pages = [
 		 "isVertical" : false,
 		 "address": "/adcGate",
 	},
+	// CALIBRATION-----------------------------------------------------
 	{
 		"name": "calibrationText",
 		"type": "Label",
@@ -388,6 +391,7 @@ pages = [
 		 "isVertical" : true,
 		 "address": "/calibration",
 	},
+	// OUTPUT-----------------------------------------------------
 	{
 		"name": "outputText",
 		"type": "Label",
@@ -409,6 +413,7 @@ pages = [
 		 "color": "#3dafff",
 		 "min" : 0, "max" : 1,
 	},
+	// MONO TOGGLE-----------------------------------------------------
 	{
 		"name": "monoText",
 		"type": "Label",
@@ -427,6 +432,7 @@ pages = [
 		 "strokeColor": "#ffffff",
 		 "color": "#3dafff",
 	},
+	// RECORD MONITOR-----------------------------------------------------
 	{
 		"name": "recordText",
 		"type": "Label",
@@ -446,28 +452,17 @@ pages = [
 	}
 	
 ],
-/********** RACK 1 *************/
+/********** RACK MIC1 *************/
 [
 	{
 		"name": "infoText",
 		"type": "Label",
 		"x": 0.01, "y": 0,
 		"width": 1, "height": 0.5,
-		"value": "RACK 1",
+		"value": "RACK MIC1",
 		"align": "left",
 		"oninit" : "infoText.label.style.fontSize = '48px'",
 		"verticalCenter": false,
-	},
-	{
-		"name": "refresh",
-		"type": "Button",
-		"bounds": [.6, .9, .2, .1],
-		"startingValue": 0,
-		"isLocal": true,
-		"mode": "contact",
-		"ontouchstart": "interfaceManager.refreshInterface()",
-		"stroke": "#aaa",
-		"label": "refrsh",
 	},
 ],
 
