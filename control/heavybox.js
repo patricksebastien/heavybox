@@ -398,6 +398,12 @@ pages = [
 		"oninit" : "monoText.label.style.fontSize = '24px'",
 		"verticalCenter": false,
 	},
+	{
+		 "name" : "mono",
+		 "type" : "Button",
+		 "x" : 0.9, "y" : 0.58,
+		 "width" : .25, "height" : .25,
+	}
 ],
 /********** RACK 1 *************/
 [
