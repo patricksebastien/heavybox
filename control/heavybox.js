@@ -386,6 +386,8 @@ pages = [
 		 "x" : 0.79, "y" : 0.58,
 		 "isVertical" : true,
 		 "address": "/output",
+		 "strokeColor": "#ffffff",
+		 "color": "#3dafff",
 		 "min" : 0, "max" : 1,
 	},
 	{
