@@ -413,6 +413,22 @@ pages = [
 		 "color": "#3dafff",
 		 "min" : 0, "max" : 1,
 	},
+	{
+		"name": "outputText",
+		"type": "Label",
+		"x": 0.94, "y": 0.69,
+		"width": 0.6, "height": 0.5,
+		"value": "Clip",
+		"align": "left",
+		"oninit" : "outputText.label.style.fontSize = '11px'",
+		"verticalCenter": false,
+	},
+	{
+		 "name" : "outputClip",
+		 "type" : "Button",
+		 "x" : 0.9, "y" : 0.69,
+		 "width" : .05, "height" : .05,
+	},
 	// MONO TOGGLE-----------------------------------------------------
 	{
 		"name": "monoText",
@@ -436,7 +452,7 @@ pages = [
 	{
 		"name": "recordText",
 		"type": "Label",
-		"x": 0.9, "y": 0.7,
+		"x": 0.9, "y": 0.74,
 		"width": 0.6, "height": 0.5,
 		"value": "Rec",
 		"align": "left",
