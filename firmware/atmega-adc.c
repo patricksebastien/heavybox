@@ -1,4 +1,5 @@
 #include "atmega-adc.h"
+#define ADC_SLEEP 25
 
 void (*_adc_handler)(uint8_t pin, uint16_t);
 volatile uint8_t _adc_pin_qty;
@@ -17,6 +18,7 @@ uint16_t adc_read(uint8_t prescaler, uint8_t vref, uint8_t pin) {
 #endif
 	
 	ADCSRA = _BV(ADEN) | _BV(ADSC) | prescaler;
+	_delay_us(ADC_SLEEP);
 	while(!(ADCSRA & _BV(ADIF)));
 	
 	return (ADCL | (ADCH<<8));

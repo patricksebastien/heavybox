@@ -352,7 +352,7 @@ pages = [
 	{
 		"name": "calibrationText",
 		"type": "Label",
-		"x": 0.6, "y": 0.54,
+		"x": 0.65, "y": 0.54,
 		"width": 0.6, "height": 0.5,
 		"value": "Calibration",
 		"align": "left",
@@ -362,7 +362,7 @@ pages = [
 	{
 		 "name" : "calibration",
 		 "type" : "MultiSlider",
-		 "x" : 0.6, "y" : 0.58,
+		 "x" : 0.65, "y" : 0.58,
 		 "width" : 0.14, "height" : .3,
 		 "numberOfSliders" : 2,
 		 "startingValue": 0,

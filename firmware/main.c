@@ -4,7 +4,9 @@
 #include <avr/wdt.h>
 #include <util/delay.h>
 #include "usbdrv.h"
-#include "atmega-adc.h"
+//#include "atmega-adc.h"
+
+
 
 // utils
 #define sbi(var, mask)	((var) |= (unsigned char) (1 << mask))
@@ -12,8 +14,7 @@
 
 // defines
 #define ADC_CHANNELS 5
-#define ADCDELAY 50		//50 μs to stabilize to the new value
-
+#define ADC_SLEEP 50
 
 typedef unsigned char  u08;
 typedef   signed char  s08;
@@ -134,6 +135,9 @@ static void hardwareInit(void)
 	// LED
 	DDRD |= (1 << 6);
 	DDRD |= (1 << 7);
+	
+	cbi(PORTD,6);
+	cbi(PORTD,7);
 }
 
 // main
@@ -151,25 +155,39 @@ int main(void) {
 		wdt_reset();
 		usbPoll();
 		
+		/*
 		//jump to bootloader if jumper is HIGH
 		if(bit_is_clear(PIND, 5)) {
 			startBootloader();
 		}
-		
-		PORTD ^= (1 << 6);
+		*/
 		
 		for(i = 0; i < ADC_CHANNELS; i++) {
-			adcValue = adc_read(ADC_PRESCALER_32, ADC_VREF_AVCC, i);
-			usb_reply[i] = adcValue >> 2;	
+			//_delay_us(ADC_SLEEP);
+			//adcValue = adc_read(ADC_PRESCALER_32, ADC_VREF_AVCC, i);
+			if (i > 7) {
+				ADCSRB |= _BV(MUX5);
+				ADMUX = 64 | (i - 8);
+			} else {
+				ADCSRB &= ~(_BV(MUX5));
+				ADMUX = 64 | i;
+			}
+			_delay_us(ADC_SLEEP);
+			ADCSRA = _BV(ADEN) | _BV(ADSC) | 5;
+			while(!(ADCSRA & _BV(ADIF)));
+
+			usb_reply[i] = (ADCL | (ADCH<<8)) >> 2;	
 			replybyte = ADC_CHANNELS + (i / 4);
 			replyshift = ((i % 4) * 2);
 			replymask = (3 << replyshift);
 			usb_reply[replybyte] =	(usb_reply[replybyte] & ~replymask) | (replymask & (adcValue << replyshift));
-			_delay_us(ADCDELAY);
 		}
 		usb_reply[7] = PINC;
 		usb_reply[8] = PINJ;
 		usb_reply[9] = PINA;
+		
+		
+
 	}
 	return 0;
 }

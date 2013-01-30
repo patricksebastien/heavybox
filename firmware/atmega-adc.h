@@ -7,6 +7,7 @@ extern "C" {
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <util/delay.h>
 
 // Comment or delete this line to disable interrupt definition.
 // You can still use the "adc_read" function if this is disabled.
