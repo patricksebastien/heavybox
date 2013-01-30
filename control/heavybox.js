@@ -405,6 +405,8 @@ pages = [
 		 "type" : "Button",
 		 "x" : 0.9, "y" : 0.58,
 		 "width" : .09, "height" : .09,
+		 "strokeColor": "#ffffff",
+		 "color": "#3dafff",
 	},
 	{
 		"name": "recordText",
