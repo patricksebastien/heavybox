@@ -369,6 +369,16 @@ pages = [
 		 "isVertical" : true,
 		 "address": "/calibration",
 	},
+	{
+		"name": "outputText",
+		"type": "Label",
+		"x": 0.79, "y": 0.5,
+		"width": 0.6, "height": 0.5,
+		"value": "Output",
+		"align": "left",
+		"oninit" : "outputText.label.style.fontSize = '24px'",
+		"verticalCenter": false,
+	},
 ],
 /********** RACK 1 *************/
 [
