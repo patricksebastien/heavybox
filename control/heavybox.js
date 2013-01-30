@@ -352,7 +352,7 @@ pages = [
 	{
 		"name": "calibrationText",
 		"type": "Label",
-		"x": 0.63, "y": 0.54,
+		"x": 0.63, "y": 0.5,
 		"width": 0.6, "height": 0.5,
 		"value": "Calibration",
 		"align": "left",
