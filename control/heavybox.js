@@ -403,7 +403,25 @@ pages = [
 		 "type" : "Button",
 		 "x" : 0.9, "y" : 0.58,
 		 "width" : .09, "height" : .09,
+	},
+	{
+		"name": "recordText",
+		"type": "Label",
+		"x": 0.9, "y": 0.7,
+		"width": 0.6, "height": 0.5,
+		"value": "Rec",
+		"align": "left",
+		"oninit" : "monoText.label.style.fontSize = '24px'",
+		"verticalCenter": false,
+	},
+	{
+		 "name" : "record",
+		 "type" : "Button",
+		 "x" : 0.9, "y" : 0.78,
+		 "width" : .09, "height" : .09,
+		 "color": "#ff1b1b",
 	}
+	
 ],
 /********** RACK 1 *************/
 [
