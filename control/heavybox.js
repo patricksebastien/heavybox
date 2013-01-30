@@ -391,7 +391,7 @@ pages = [
 	{
 		"name": "monoText",
 		"type": "Label",
-		"x": 0.92, "y": 0.5,
+		"x": 0.9, "y": 0.5,
 		"width": 0.6, "height": 0.5,
 		"value": "Mono",
 		"align": "left",
