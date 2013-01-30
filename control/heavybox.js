@@ -411,13 +411,13 @@ pages = [
 		"width": 0.6, "height": 0.5,
 		"value": "Rec",
 		"align": "left",
-		"oninit" : "monoText.label.style.fontSize = '24px'",
+		"oninit" : "recordText.label.style.fontSize = '24px'",
 		"verticalCenter": false,
 	},
 	{
 		 "name" : "record",
 		 "type" : "Button",
-		 "x" : 0.9, "y" : 0.78,
+		 "x" : 0.9, "y" : 0.80,
 		 "width" : .09, "height" : .09,
 		 "color": "#ff1b1b",
 	}
