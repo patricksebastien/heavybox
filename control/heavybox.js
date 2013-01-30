@@ -325,6 +325,7 @@ pages = [
 		 "x" : 0.41, "y" : 0.58,
 		 "width" : .05, "height" : .3,
 		 "rows" : 4, "columns" : 1,
+		 "color" : "#ff863d",
 		 "address": "/adcClip",
 	},
 	{
