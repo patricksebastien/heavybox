@@ -291,7 +291,7 @@ pages = [
 		"type": "Label",
 		"x": 0.01, "y": 0.5,
 		"width": 0.6, "height": 0.5,
-		"value": "ADC 1->4 VOLUME",
+		"value": "VOLUME ADC 1->4",
 		"align": "left",
 		"oninit" : "volumeText.label.style.fontSize = '24px'",
 		"verticalCenter": false,
