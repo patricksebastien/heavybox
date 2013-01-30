@@ -388,6 +388,16 @@ pages = [
 		 "address": "/output",
 		 "min" : 0, "max" : 1,
 	},
+	{
+		"name": "monoText",
+		"type": "Label",
+		"x": 0.92, "y": 0.5,
+		"width": 0.6, "height": 0.5,
+		"value": "Mono",
+		"align": "left",
+		"oninit" : "monoText.label.style.fontSize = '24px'",
+		"verticalCenter": false,
+	},
 ],
 /********** RACK 1 *************/
 [
