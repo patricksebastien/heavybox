@@ -18,7 +18,7 @@ oscManager.delegate = {
                 control.changePage(args[0]);
                 break;
 			case "/cr":
-				var w = control.getWidgetWithName(arguments[2]);
+				var w = control.getWidgetWithName(arguments[3]);
 				w.setColors(["#000", "#ff1b1b", "#fff"]);
 				break;
 			case "/cg":
