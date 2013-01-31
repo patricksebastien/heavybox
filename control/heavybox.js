@@ -427,7 +427,7 @@ pages = [
 		 "name" : "outputClip",
 		 "type" : "Button",
 		 "x" : 0.9, "y" : 0.69,
-		 "width" : .03, "height" : .03,
+		 "width" : .04, "height" : .04,
 	},
 	// MONO TOGGLE-----------------------------------------------------
 	{
@@ -452,7 +452,7 @@ pages = [
 	{
 		"name": "recordText",
 		"type": "Label",
-		"x": 0.9, "y": 0.74,
+		"x": 0.9, "y": 0.73,
 		"width": 0.6, "height": 0.5,
 		"value": "Rec",
 		"align": "left",
