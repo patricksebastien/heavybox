@@ -1,0 +1,6 @@
+#N canvas 751 216 450 300 10;
+#X obj 165 104 r fromOSC;
+#X obj 165 130 routeOSC /\$1;
+#X obj 166 155 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
