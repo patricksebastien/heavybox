@@ -4,7 +4,7 @@ interfaceOrientation = "landscape";
 /*
 adb push D:\dropbox\Dropbox\github\heavybox\control\heavybox.js /mnt/sdcard/control
 */
-
+/*
 oscManager.delegate = {
     processOSC : function(oscAddress, typetags, args) {
         switch(oscAddress) {
@@ -39,6 +39,7 @@ oscManager.delegate = {
         }
     }
 }
+*/
 /*
 constants = [
 {
