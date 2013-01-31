@@ -427,7 +427,7 @@ pages = [
 		 "name" : "outputClip",
 		 "type" : "Button",
 		 "x" : 0.9, "y" : 0.69,
-		 "width" : .05, "height" : .05,
+		 "width" : .03, "height" : .03,
 	},
 	// MONO TOGGLE-----------------------------------------------------
 	{
