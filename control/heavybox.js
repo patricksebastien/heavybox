@@ -416,7 +416,7 @@ pages = [
 	{
 		"name": "outputClipText",
 		"type": "Label",
-		"x": 0.96, "y": 0.69,
+		"x": 0.95, "y": 0.69,
 		"width": 0.6, "height": 0.5,
 		"value": "Clip",
 		"align": "left",
