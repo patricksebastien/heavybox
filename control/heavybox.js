@@ -114,6 +114,7 @@ pages = [
 		 "address": "/tuning",
 		 "min" : 0, "max" : 1,
 	},
+	/*
 	{
 		"name": "noteText",
 		"type": "Label",
@@ -478,7 +479,7 @@ pages = [
 		"stroke": "#aaa",
 		"label": "refresh",
 	},
-	
+	*/
 ],
 
 
