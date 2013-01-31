@@ -465,7 +465,18 @@ pages = [
 		 "x" : 0.9, "y" : 0.79,
 		 "width" : .09, "height" : .09,
 		 "color": "#ff1b1b",
-	}
+	},
+	{
+		"name": "refresh",
+		"type": "Button",
+		"bounds": [.8, .9, .2, .1],
+		"startingValue": 0,
+		"isLocal": true,
+		"mode": "contact",
+		"ontouchstart": "interfaceManager.refreshInterface()",
+		"stroke": "#aaa",
+		"label": "refresh",
+	},
 	
 ],
 
