@@ -468,16 +468,33 @@ pages = [
 	}
 	
 ],
+
+
 /********** RACK MIC1 *************/
 [
 	{
-		"name": "infoText",
+		"name": "mic1Text",
 		"type": "Label",
 		"x": 0.01, "y": 0,
 		"width": 1, "height": 0.5,
-		"value": "RACK MIC1",
+		"value": "FX MIC1",
 		"align": "left",
-		"oninit" : "infoText.label.style.fontSize = '48px'",
+		"oninit" : "mic1Text.label.style.fontSize = '48px'",
+		"verticalCenter": false,
+	},
+],
+
+
+/********** RACK GUIT *************/
+[
+	{
+		"name": "guitarText",
+		"type": "Label",
+		"x": 0.01, "y": 0,
+		"width": 1, "height": 0.5,
+		"value": "FX GUITAR",
+		"align": "left",
+		"oninit" : "guitarText.label.style.fontSize = '48px'",
 		"verticalCenter": false,
 	},
 ],
