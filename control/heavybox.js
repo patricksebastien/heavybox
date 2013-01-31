@@ -39,7 +39,7 @@ oscManager.delegate = {
         }
     }
 }
-
+/*
 constants = [
 {
     "name": "nextBtn",
@@ -90,7 +90,7 @@ constants = [
     "label": "refresh",
 },
 ];
-
+*/
 pages = [
 /********** TUNING *************/
 [
