@@ -27,6 +27,8 @@
 // ------------------------------------------------------------------------------
 #define USBDEV_SHARED_VENDOR    	0x16c0  /* VOTI */
 #define USBDEV_SHARED_PRODUCT   	0x05dc  /* Obdev's free shared PID */
+#define USB_CFG_VENDOR_NAME			"workinprogress.ca"
+#define USB_CFG_DEVICE_NAME			"heavybox"
 #define OUTLETS 					8
 #define USBREPLYBUFFER 				13
 
@@ -63,7 +65,7 @@ static void *usb_thread_read(void *w)
 {
 	int nBytes;
 	t_heavybox *x = (t_heavybox*) w;
-	unsigned char bufferIn[BUFFERINSIZE];
+	unsigned char bufferIn[USBREPLYBUFFER];
 
 	while(1) {
 		pthread_testcancel();
@@ -125,10 +127,11 @@ void *heavybox_new(t_symbol *s)		// s = optional argument typed into object box 
 {
 	t_heavybox *x;									// local variable (pointer to a t_heavybox data structure)
 	x = (t_heavybox *)pd_new(heavybox_class);			 // create a new instance of this object
-  x->x_verbose = 0;
+    x->x_verbose = 0;
 	x->dev_handle = NULL;
+	find_device(x);
+	
 	int i;
-
 	// create outlets and assign it to our outlet variable in the instance's data structure
 	for (i=0; i < OUTLETS; i++) {
 		x->outlets[i] = outlet_new(&x->p_ob, &s_float);
@@ -204,14 +207,14 @@ void find_device(t_heavybox *x) {
                     goto skipDevice;
                 }
 
-                if(strcmp(string, "workinprogress.ca") != 0)
+                if(strcmp(string, USB_CFG_VENDOR_NAME) != 0)
                     goto skipDevice;
                 len = usbGetStringAscii(handle, dev->descriptor.iProduct, 0x0409, string, sizeof(string));
                 if(len < 0){
                     post("heavybox: warning: cannot query product for device: %s", usb_strerror());
                     goto skipDevice;
                 }
-                if(strcmp(string, "heavybox") == 0)
+                if(strcmp(string, USB_CFG_DEVICE_NAME) == 0)
                     break;
 				skipDevice:
                 usb_close(handle);

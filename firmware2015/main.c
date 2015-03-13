@@ -28,7 +28,6 @@ void startBootloader(void) {
 		TIMSK0 &= ~(1<<TOIE0);			// disable timer overflow
 
 		cli();							// turn off interrupts
-		wdt_disable();					// disable watchdog timer
 		usbDeviceDisconnect(); 			// disconnect from USB bus
 
 		cbi(ADCSRA, ADIE);				// disable ADC interrupts
@@ -116,12 +115,14 @@ int main(void) {
 
 	hardwareInit();
 	usbInit();
+	sei();
 
 	while(1) {
 
 		usbPoll();
+		unsigned int i;
 		for(i = 0; i < 5; i++) {
-			uint16_t v = adc_read(ADC_PRESCALER_32, ADC_VREF_AVCC, i);
+			uint16_t v = adc_read(ADC_PRESCALER_16, ADC_VREF_AVCC, i);
 			if(i == 0) {
 					usb_reply[0] = (uint8_t)((v & 0xFF00) >> 8); // 10 bits adc
 					usb_reply[1] = (uint8_t)(v & 0x00FF);
